@@ -1,0 +1,33 @@
+MODELS:
+User
+
+User Fields:
+-FullName
+-emailid(primary key)
+-contectNumber
+-password(use bcrypt)
+-address
+-businessName(optional)	
+-profile Picture(path of image)
+-Transecection:{
+-name
+-phno or email
+-details(item name,bill no,quantity,)
+-amount
+-date
+-typeOfUser(customer,supplier)
+-typeOfTransection(credit,debit)
+-Method(cash,bank,oncredit)
+-reminder(optional)
+}
+
+Routes:-
+register
+login 
+transection
+sendReminder
+filter or sorting(using date,amount,name)
+findTransection
+UpdateTransection 
+DeleteTransection	
+genrateReport
